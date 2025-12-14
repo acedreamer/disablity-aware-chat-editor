@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V3 Robustness | Disability-Aware Chat Editor</title>
+    <link rel="stylesheet" href="../style.css?v=3">
+</head>
+
+<body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
+    <a href="../index.html#deep-dive" class="back-btn">← Back</a>
+
+    <main class="container">
+        <div class="hero-split">
+            <div class="hero-text">
+                <span class="role-badge" style="background: var(--alert-orange);">Architecture Layer 3</span>
+                <h1>Robustness</h1>
+                <p class="subtitle">The Unbreakable Shield. Circuit breakers, sanitizers, and fallback protocols.</p>
+            </div>
+            <div class="hero-visual">
+                <div class="breaker-viz" style="transform: scale(1.5);">
+                    <div class="switch-container" id="circuit-switch">
+                        <div class="switch-knob"></div>
+                    </div>
+                    <!-- Added interactive controls -->
+                    <div class="breaker-status" id="breaker-text">SYSTEM SECURE</div>
+                    <button class="breaker-btn" id="trip-breaker">⚠️ Simulate Error</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-3">
+            <article class="glass-card">
+                <h3>Circuit Breaker</h3>
+                <p>If the AI service fails (503 Error), our <strong>Circuit Breaker</strong> trips, instantly switching
+                    the app to Offline Mode (V1).</p>
+            </article>
+
+            <article class="glass-card">
+                <h3>Sanitization</h3>
+                <p>All AI output is stripped of dangerous HTML tags (scripts, iframes) to prevent Injection attacks.</p>
+            </article>
+
+            <article class="glass-card">
+                <h3>Error Recovery</h3>
+                <p>Self-healing mechanisms retry connections exponentially in the background without user intervention.
+                </p>
+                <a href="../../../architecture_plans/VERSION_3_ROBUSTNESS.md"
+                    style="display: inline-block; margin-top: 20px; font-weight: bold; color: var(--alert-orange);">→
+                    View Raw Specs</a>
+            </article>
+        </div>
+        <script src="../script.js?v=2"></script>
+    </main>
+</body>
+
+</html>

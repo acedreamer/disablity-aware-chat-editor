@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Identity | Disability-Aware Chat Editor</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .color-chip {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
+    <a href="../index.html#philosophy" class="back-btn">← Back</a>
+
+    <main class="container">
+        <div class="hero-split">
+            <div class="hero-text">
+                <h1>Visual Identity</h1>
+                <p class="subtitle">"Soft Modern". A design language built to reduce cognitive load and sensory
+                    aggression.</p>
+            </div>
+            <div class="hero-visual" style="display:flex; justify-content:center; align-items:center;">
+                <div style="font-size: 8rem;">🎨</div>
+            </div>
+        </div>
+
+        <div class="grid-3">
+            <article class="glass-card">
+                <span class="role-badge" style="background: var(--deep-teal);">Shape</span>
+                <h3>Rounded Geometry</h3>
+                <p>We use large border-radii (32px) on all cards. Sharp corners subconsciously signal "danger", while
+                    curves signal safety.</p>
+            </article>
+
+            <article class="glass-card">
+                <span class="role-badge" style="background: var(--electric-blue);">Color</span>
+                <h3>Semantic Palette</h3>
+                <div style="display: flex; gap: 20px; margin-top: 20px;">
+                    <div style="text-align:center;">
+                        <div class="color-chip" style="background: var(--deep-teal);"></div>
+                        <span>Calm</span>
+                    </div>
+                    <div style="text-align:center;">
+                        <div class="color-chip" style="background: var(--alert-orange);"></div>
+                        <span>Alert</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="glass-card">
+                <span class="role-badge" style="background: rgba(255,255,255,0.5); color: #333 !important;">Feel</span>
+                <h3>Tactile Noise</h3>
+                <p>The subtle grain overlay provides a "paper-like" texture, grounding the digital interface in physical
+                    reality.</p>
+            </article>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System | Disability-Aware Chat Editor</title>
+    <link rel="stylesheet" href="style.css?v=3">
+    <script src="script.js?v=2" defer></script>
+</head>
+
+<body>
+
+    <!-- Ambient Background Elements -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
+    <header>
+        <div class="container hero-content">
+            <p class="role-badge" style="margin: 0 auto 20px;">Architecture & Design v1.0</p>
+            <h1>Disability-Aware Chat Editor</h1>
+            <p class="title">A visual exploration of the Disability-Aware Chat Editor. <br>Built for Neurodiversity.
+                Powered by Resilience.</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- SECTION 1: PHILOSOPHY -->
+        <section id="philosophy">
+            <div class="reveal">
+                <h2>Design Philosophy</h2>
+                <div class="grid-3">
+                    <a href="philosophy/visual_identity.html" class="glass-card link-card">
+                        <div class="icon-box">🎨</div>
+                        <h3>Soft Modern</h3>
+                        <p>We reject sharp edges and high-contrast aggression. Our interface uses 16px border-radii,
+                            localized blurs, and "Calm Teal" to create a safe digital space.</p>
+                    </a>
+                    <a href="philosophy/cognitive_ergonomics.html" class="glass-card link-card">
+                        <div class="icon-box">🧠</div>
+                        <h3>Cognitive Ergonomics</h3>
+                        <p>The UI is alive. In "Dyslexia Mode", text breathes. In "ADHD Mode", distractions vanish. We
+                            don't just display text; we reshape it for your brain.</p>
+                    </a>
+                    <a href="philosophy/safety_net.html" class="glass-card link-card">
+                        <div class="icon-box">🛡️</div>
+                        <h3>The Safety Net</h3>
+                        <p>Anxiety-free interaction. Every delete has an undo. Every crash has a fallback. The system
+                            anticipates failure and catches you before you fall.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: ARCHITECTURE -->
+        <section id="architecture">
+            <div class="reveal">
+                <h2>The Resilient Pipeline</h2>
+                <p class="subtitle" style="margin-bottom: 50px; text-align: center;">A hybrid architecture that merges
+                    offline reliability with cloud intelligence.</p>
+
+                <div class="pipeline-viz">
+                    <!-- The Track -->
+                    <div class="pipeline-line"></div>
+
+                    <!-- Particles representing data flow -->
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+
+                    <!-- Nodes -->
+                    <div class="pipeline-nodes">
+                        <div class="node">
+                            <span>Input</span>
+                            <div style="font-size: 0.8rem; color: #999; margin-top: 5px;">Keystrokes</div>
+                        </div>
+
+                        <div class="node v2">
+                            <span>Intelligence</span>
+                            <div style="font-size: 0.8rem; color: var(--calm-teal); margin-top: 5px;">Gemini V2</div>
+                        </div>
+
+                        <div class="node v3">
+                            <span>Safety</span>
+                            <div style="font-size: 0.8rem; color: var(--burnt-sienna); margin-top: 5px;">Circuit Breaker
+                            </div>
+                        </div>
+
+                        <div class="node">
+                            <span>Render</span>
+                            <div style="font-size: 0.8rem; color: #999; margin-top: 5px;">UI Update</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-3" style="margin-top: 60px;">
+                    <div class="glass-card v1-detail">
+                        <h4>🟢 Version 1</h4>
+                        <p>The "Offline Core". Zero latency, pure Regex. It's the bedrock that never fails.</p>
+                    </div>
+                    <div class="glass-card v2-detail">
+                        <h4>🔵 Version 2</h4>
+                        <p>The "AI Brain". Summarizes context, detects tone, and simplifies flow using Gemini Flash.</p>
+                    </div>
+                    <div class="glass-card v3-detail">
+                        <h4>🔴 Version 3</h4>
+                        <p>The "Immune System". Circuit breakers protect the app from API failures.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: DEEP DIVE -->
+        <section id="deep-dive">
+            <div class="reveal">
+                <h2>Technical Deep Dive</h2>
+                <div class="grid-3">
+                    <!-- V1 Gear System -->
+                    <a href="architecture/v1_core.html" class="glass-card link-card" style="text-align: center;">
+                        <div class="gear-viz">
+                            <div class="gear"></div>
+                            <div class="gear-small"></div>
+                        </div>
+                        <h3>The Engine (V1)</h3>
+                        <p>Deterministic Regex logic. Like a physical machine, it grinds through text with zero latency.
+                            <strong>Always Online.</strong>
+                        </p>
+                    </a>
+
+                    <!-- V2 AI Cloud -->
+                    <a href="architecture/v2_ai.html" class="glass-card link-card" style="text-align: center;">
+                        <div class="cloud-viz">
+                            <div class="cloud-icon"></div>
+                        </div>
+                        <h3>The Cloud (V2)</h3>
+                        <p>Async API calls to Gemini. It "breathes" with data. Powerful, but dependent on the network
+                            ecosystem.</p>
+                    </a>
+
+                    <!-- V3 Circuit Breaker -->
+                    <a href="architecture/v3_robustness.html" class="glass-card link-card" style="text-align: center;">
+                        <div class="breaker-viz">
+                            <div class="switch-container" id="circuit-switch">
+                                <div class="switch-knob"></div>
+                            </div>
+                            <div class="breaker-status" id="breaker-text">SYSTEM SECURE</div>
+                            <button class="breaker-btn" id="trip-breaker">⚠️ Simulate Error</button>
+                        </div>
+                        <h3>The Circuit (V3)</h3>
+                        <p>Interactive fail-safe. If the error rate spikes, the switch flips to cut off the API and save
+                            the session.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: TEAM -->
+        <section id="team">
+            <div class="reveal">
+                <h2>The Makers</h2>
+                <div class="team-container">
+                    <!-- Abishek -->
+                    <a href="team/abishek.html" class="glass-card profile-card link-card">
+                        <div class="avatar-placeholder">A</div>
+                        <span class="role-badge">System Architect</span>
+                        <h3>Abishek</h3>
+                        <ul>
+                            <li>Component Architecture</li>
+                            <li>Layout Engine</li>
+                            <li>State Management</li>
+                        </ul>
+                    </a>
+
+                    <!-- Karthik -->
+                    <a href="team/karthik.html" class="glass-card profile-card link-card">
+                        <div class="avatar-placeholder" style="color: var(--burnt-sienna);">K</div>
+                        <span class="role-badge ai">AI
+                            Specialist</span>
+                        <h3>Karthik</h3>
+                        <ul>
+                            <li>Prompt Engineering</li>
+                            <li>Visual Identity</li>
+                            <li>Motion Design</li>
+                        </ul>
+                    </a>
+
+                    <!-- Alfred -->
+                    <a href="team/alfred.html" class="glass-card profile-card link-card">
+                        <div class="avatar-placeholder" style="color: var(--soft-slate);">Al</div>
+                        <span class="role-badge">Components</span>
+                        <h3>Alfred</h3>
+                        <ul>
+                            <li>Rule Engine</li>
+                            <li>Component Library</li>
+                            <li>Performance</li>
+                        </ul>
+                    </a>
+
+                    <!-- Ashish -->
+                    <a href="team/ashish.html" class="glass-card profile-card link-card">
+                        <div class="avatar-placeholder" style="color: #E9C46A;">As</div>
+                        <span class="role-badge reliability">Reliability</span>
+                        <h3>Ashish</h3>
+                        <ul>
+                            <li>Robustness Layer</li>
+                            <li>Accessibility Audit</li>
+                            <li>Security & Privacy</li>
+                        </ul>
+                    </a>
+                </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Disability-Aware Chat Editor &copy; 2025</p>
+        <div style="margin-top: 20px;">
+            <a href="../../architecture_plans/MASTER_ARCHITECTURE.md">Master Doc</a>
+            <a href="../../design_plans/UI_UX_PHILOSOPHY.md">Philosophy</a>
+            <a href="../../design_plans/WORK_ALLOCATION.md">Team</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
