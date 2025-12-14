@@ -598,6 +598,133 @@ section {
     font-size: 0.95rem;
 }
 
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+
+    /* Layout Adjustments */
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 3rem;
+        /* Smaller header */
+    }
+
+    /* Grids stack vertically */
+    .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .hero-split {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .glass-card {
+        padding: 2rem;
+    }
+
+    /* Pipeline Visualization Mobile Transformation */
+    .pipeline-viz {
+        height: auto;
+        min-height: 400px;
+        flex-direction: column;
+        /* Vertical flow */
+        margin-bottom: 3rem;
+    }
+
+    .pipeline-line {
+        width: 4px;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .pipeline-nodes {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    /* Adjust particles for vertical flow */
+    .particle {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: flow-vertical 2.5s infinite linear;
+    }
+
+    @keyframes flow-vertical {
+        0% {
+            top: 0%;
+            opacity: 0;
+        }
+
+        15% {
+            opacity: 1;
+        }
+
+        85% {
+            opacity: 1;
+        }
+
+        100% {
+            top: 100%;
+            opacity: 0;
+        }
+    }
+
+    /* Detail Page Visuals */
+    .hero-visual {
+        order: -1;
+        /* Visual first on mobile */
+        margin-bottom: 2rem;
+    }
+
+    .gear-viz,
+    .cloud-viz,
+    .breaker-viz {
+        transform: scale(1) !important;
+        /* Prevent cut-off */
+    }
+
+    /* Fixed Back Button adjustments for mobile */
+    .back-btn {
+        position: absolute;
+        /* Unstick from top left */
+        top: 20px;
+        left: 20px;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.2rem;
+        /* Even smaller for phones */
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .glass-card {
+        padding: 1.5rem;
+        /* Maximize space */
+    }
+}
+
 /* Footer */
 footer {
     text-align: center;
